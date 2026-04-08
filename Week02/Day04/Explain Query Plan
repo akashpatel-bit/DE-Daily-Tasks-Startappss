@@ -1,0 +1,10 @@
+Explain Query Plan
+The first command to investigate a slow-running query is EXPLAIN QUERY PLAN.
+It helps understand how the database executes the query by showing whether 
+it performs a full table scan or uses an index.
+This information helps identify performance issues and optimize the query.
+
+EXPLAIN QUERY PLAN
+SELECT *
+FROM employees
+WHERE salary > 50000;
