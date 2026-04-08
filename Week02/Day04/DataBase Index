@@ -1,0 +1,22 @@
+Database Index
+
+A database index is a data structure that improves query performance by allowing the database engine to find rows faster.
+Instead of scanning the entire table, the index helps locate the required data directly. 
+Indexes are typically created on columns that are frequently used in WHERE, JOIN, or ORDER BY clauses, 
+which reduces query execution time and improves overall database performance.
+
+---- create index on salary column
+
+CREATE INDEX idx_salary
+ON employees(salary);
+
+Types of Indexes
+1. Clustered Index
+      Data is physically sorted
+      Usually primary key
+
+2. Non-Clustered Index
+      Separate structure
+      It points Data
+
+SQL works mostly on non clustered index
