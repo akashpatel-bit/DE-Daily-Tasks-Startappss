@@ -1,0 +1,30 @@
+Consistency in ACID properties
+
+The 'C' in ACID stands for Consistency.
+It ensures that a transaction brings the database from one valid state to another valid state.
+After the transaction is completed, all rules, constraints, and relationships in the database must remain valid.
+If any error occurs, the database rolls back the transaction to maintain consistency.
+
+ACID Properties (Transactions)
+
+ACID = Reliable database  guarantee 🔐
+
+Letter	          Meaning	            Simple Meaning
+
+A	              Atomicity	           All or nothing
+C	              Consistency	         Valid state
+I	              Isolation	           No interference
+D	              Durability	         Permanent save
+
+
+BEGIN TRANSACTION;
+
+UPDATE accounts
+SET balance = balance - 1000
+WHERE name = 'A';
+
+UPDATE accounts
+SET balance = balance + 1000
+WHERE name = 'B';
+
+COMMIT;
