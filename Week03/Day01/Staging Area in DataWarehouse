@@ -1,0 +1,14 @@
+Data Consolidation: Collects data from multiple sources into one place, making it easier to process uniformly.
+
+Enhanced Data Quality: Cleanses data through deduplication, error correction and standardization before loading.
+
+Schema Alignment: Maps and converts different source formats into a unified schema for the warehouse.
+
+Improved Performance: Handles heavy transformations outside the warehouse to ensure faster analytical queries.
+
+Temporary Storage for Batches: Stores incoming data temporarily so it can be synchronized and 
+                               loaded in organized batches.
+
+Better Data Security: Provides a controlled zone where sensitive data undergoes ETL with proper security measures.
+
+Audit & Traceability: Maintains logs of all ETL steps, enabling full data lineage and easier troubleshooting.
