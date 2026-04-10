@@ -1,0 +1,26 @@
+A transactional database for an e-commerce site is OLTP (Online Transaction Processing). 
+
+OLTP is chosen because the primary goal of an e-commerce site is to manage high-volume,
+real-time transactions—such as placing orders, updating inventory, 
+and processing payments—with extreme speed and data integrity. 
+
+
+Here is why an e-commerce transactional database is OLTP:
+
+1. High-Volume, Real-Time Transactions 
+E-commerce sites process thousands of individual orders, updates, and inserts every second.
+OLTP systems are optimized to handle this high frequency of short, fast transactions efficiently in real-time. 
+
+
+2. Strict Data Integrity and Consistency (ACID)
+OLTP systems comply with ACID properties (Atomicity, Consistency, Isolation, Durability).
+This is critical for e-commerce to ensure that: 
+
+3.Normalized Data Model
+OLTP databases are usually highly normalized (3NF - Third Normal Form) to minimize data redundancy. 
+This makes it fast to update or insert data into specific tables, 
+such as changing the status of a single order without having to update redundant historical records. 
+
+4 Quick Response Time
+Customers expect instant feedback when they click "buy" or "checkout."
+OLTP systems are designed to provide response times in milliseconds. 
