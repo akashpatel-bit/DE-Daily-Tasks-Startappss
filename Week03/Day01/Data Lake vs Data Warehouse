@@ -1,0 +1,7 @@
+Feature 	            Data Lake	                                   Data Warehouse
+
+Data Type	            Raw, Structured, Unstructured	               Structured, Processed
+Schema	              Schema-on-Read	                             Schema-on-Write
+Cost	                Low cost	                                   High cost
+Flexibility         	High (easy to change)	                       Low (hard to change)
+Analytics            	Machine Learning, Data Science	             BI, Reporting, SQL
