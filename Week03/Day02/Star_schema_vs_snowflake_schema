@@ -1,0 +1,34 @@
+Q 2. What are the pros and cons of a star schema compared to a snowflake schema?
+ Star Schema vs  Snowflake Schema
+ Star Schema — Pros
+
+✔ Simple structure 
+✔ Fast query performance 
+✔ BI tools best use (Power BI, Tableau etc.)
+✔ Reporting easy
+
+ Star Schema — Cons
+
+❌ Data redundancy (same data repeat hota hai)
+❌ Storage thoda zyada lagta hai
+
+ Snowflake Schema — Pros
+
+✔ No redundancy (normalized tables)
+✔ Data consistency better
+✔ Storage efficient
+
+ Snowflake Schema — Cons
+
+❌ Complex structure
+❌ More joins → slow queries
+❌ Query likhna tough
+
+| Feature     | Star Schema | Snowflake Schema |
+| ----------- | ----------- | ---------------- |
+| Structure   | Simple      | Complex          |
+| Performance | Fast        | Slow             |
+| Joins       | Less        | More             |
+| Redundancy  | Yes         | No               |
+| Storage     | More        | Less             |
+| Use Case    | Reporting   | Data consistency |
