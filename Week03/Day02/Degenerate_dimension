@@ -1,0 +1,27 @@
+Question 3
+
+What is a degenerate dimension?
+
+Answer:
+A degenerate dimension is a dimension attribute that is stored directly in the fact table 
+instead of creating a separate dimension table. 
+It usually contains only an identifier and no additional descriptive attributes.
+
+Example
+
+Sales_Fact
+-----------
+order_id   ← Degenerate Dimension
+product_id
+customer_id
+date_id
+quantity
+amount
+
+In this example, order_id is a degenerate dimension because it is kept in the fact table
+and does not have its own dimension table.
+
+When to use:
+ When the attribute is just an identifier
+ When there are no descriptive columns
+ When creating a separate dimension table is unnecessary
