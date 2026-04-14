@@ -1,0 +1,55 @@
+Question 1
+
+Design a simple star schema for a retail sales system. What are your fact and dimension tables?
+
+
+Fact = numeric values
+Dimension = descriptive info
+
+Center = Fact
+Around = Dimensions
+
+ Fact Table
+
+Sales_Fact
+-----------
+ sale_id
+ product_id
+ customer_id
+ store_id
+ date_id
+ quantity
+ sales_amount
+
+Dimension Tables
+
+Product_Dim
+ product_id
+ product_name
+ category
+ brand
+
+Customer_Dim
+ customer_id
+ customer_name
+ city
+ gender
+
+Store_Dim
+ store_id
+ store_name
+ location
+
+Date_Dim
+ date_id
+ date
+ month
+ yea
+
+Final Star Schema
+
+            Customer_Dim
+                |
+Product_Dim — Sales_Fact — Date_Dim
+                |
+             Store_Dim
