@@ -1,6 +1,4 @@
-
-
-
+1. --Find the departments where the average salary is higher than the company-wide average salary.
 -- create new table employee2
 CREATE TABLE employee2 (
     id INTEGER PRIMARY KEY,
